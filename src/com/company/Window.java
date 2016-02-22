@@ -20,20 +20,7 @@ public class Window extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 info.textField = textField.getText();
-                try {
-                    MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
-                    messageDigest.reset();
-                    messageDigest.update(info.textField.getBytes());
-
-                    byte result[] = messageDigest.digest();
-                    StringBuffer buf = new StringBuffer();
-                    for (byte bytes : result) {
-                        buf.append(String.format("%02x", bytes & 0xff));
-                    }
-                    System.out.println(buf.toString());
-                } catch (NoSuchAlgorithmException e1) {
-                    e1.getMessage();
-                }
+                info.textToHash();
 
             }
         };
