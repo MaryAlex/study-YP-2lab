@@ -1,9 +1,6 @@
 package com.company;
 
-import javax.crypto.BadPaddingException;
-import javax.crypto.Cipher;
-import javax.crypto.IllegalBlockSizeException;
-import javax.crypto.NoSuchPaddingException;
+import javax.crypto.*;
 import java.security.*;
 
 
@@ -13,8 +10,8 @@ public class Info {
     private String textField;
     public String hashText;
     public String encryptedByAsymmetric;
-    PrivateKey privateKey;
-    PublicKey publicKey;
+    PrivateKey privateAsymmetricKey;
+    PublicKey publicAsymmetricKey;
 
     public String getTextField() {
         return textField;
@@ -24,8 +21,8 @@ public class Info {
         this.textField = null;
         this.hashText = null;
         this.encryptedByAsymmetric = null;
-        this.privateKey = null;
-        this.publicKey = null;
+        this.privateAsymmetricKey = null;
+        this.publicAsymmetricKey = null;
     }
 
     public void setTextField(String textField) {
@@ -72,12 +69,12 @@ public class Info {
             KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance(ASYMMETRIC_ALGORITHM);
             keyPairGenerator.initialize(1024);
             KeyPair keyPair = keyPairGenerator.generateKeyPair();
-            privateKey = keyPair.getPrivate();
-            publicKey = keyPair.getPublic();
+            privateAsymmetricKey = keyPair.getPrivate();
+            publicAsymmetricKey = keyPair.getPublic();
 
             Cipher cipher = Cipher.getInstance(ASYMMETRIC_ALGORITHM);
 
-            cipher.init(Cipher.ENCRYPT_MODE, publicKey);
+            cipher.init(Cipher.ENCRYPT_MODE, publicAsymmetricKey);
             encryptedByAsymmetric = getHexadecimalValue(cipher.doFinal(textField.getBytes()));
             System.out.println("Encrypted Data: " + encryptedByAsymmetric);
         } catch (NoSuchAlgorithmException e) {
@@ -93,11 +90,11 @@ public class Info {
         }
     }
 
-    private void textAsymmetricKeyDecrypt() {
+    public void textAsymmetricKeyDecrypt() {
         try {
             Cipher dipher = Cipher.getInstance(ASYMMETRIC_ALGORITHM);
 
-            dipher.init(Cipher.DECRYPT_MODE, privateKey);
+            dipher.init(Cipher.DECRYPT_MODE, privateAsymmetricKey);
             System.out.println(new String(dipher.doFinal(hexStringToByteArray(encryptedByAsymmetric))));
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
@@ -110,5 +107,10 @@ public class Info {
         } catch (BadPaddingException e) {
             e.printStackTrace();
         }
+    }
+
+    public void textSymmetricKeyEncrypt() {
+        key = KeyGenerator.getInstance(algorithm).generateKey();
+        cipher = Cipher.getInstance(algorithm);
     }
 }

@@ -4,7 +4,6 @@
     <list default="true" id="6a30291b-b7af-4db1-9989-53db8c994a50" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Info.java" afterPath="$PROJECT_DIR$/src/com/company/Info.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Window.form" afterPath="$PROJECT_DIR$/src/com/company/Window.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Window.java" afterPath="$PROJECT_DIR$/src/com/company/Window.java" />
     </list>
     <ignored path="YP 2lab.iws" />
@@ -41,19 +40,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Window.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Window.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5156082">
-              <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#472#688#0" expanded="true" />
                 <element signature="e#687#688#0" expanded="true" />
                 <element signature="e#756#986#0" expanded="true" />
                 <element signature="e#985#986#0" expanded="true" />
-                <element signature="e#1053#1283#0" expanded="true" />
-                <element signature="e#1282#1283#0" expanded="true" />
+                <element signature="e#1053#1282#0" expanded="true" />
+                <element signature="e#1281#1282#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,19 +78,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Info.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Info.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Info.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.55435956">
+              <caret line="96" column="65" selection-start-line="96" selection-start-column="65" selection-end-line="96" selection-end-column="65" />
               <folding>
-                <element signature="e#533#534#0" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
+                <element signature="method#eraseDate#0;class#Info#0" expanded="false" />
+                <element signature="method#setTextField#0;class#Info#0" expanded="false" />
                 <element signature="method#textToHash#0;class#Info#0" expanded="false" />
                 <element signature="method#getHexadecimalValue#0;class#Info#0" expanded="false" />
                 <element signature="method#hexStringToByteArray#0;class#Info#0" expanded="false" />
                 <element signature="method#textAsymmetricKeyEncrypt#0;class#Info#0" expanded="false" />
-                <element signature="method#textAsymmetricKeyDecrypt#0;class#Info#0" expanded="false" />
+                <element signature="method#textSymmetricKeyEncrypt#0;class#Info#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -686,7 +685,7 @@
       <updated>1455900117186</updated>
       <workItem from="1455900119690" duration="1973000" />
       <workItem from="1455904735632" duration="17000" />
-      <workItem from="1456168631867" duration="11022000" />
+      <workItem from="1456168631867" duration="11402000" />
     </task>
     <task id="LOCAL-00001" summary="hex ready">
       <created>1456171466251</created>
@@ -706,11 +705,17 @@
       <option name="project" value="LOCAL" />
       <updated>1456182612271</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="asymmetricKey ready">
+      <created>1456183102955</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1456183102955</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13012000" />
+    <option name="totallyTimeSpent" value="13392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -760,7 +765,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -790,8 +795,8 @@
             <element signature="e#687#688#0" expanded="true" />
             <element signature="e#756#986#0" expanded="true" />
             <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1053#1283#0" expanded="true" />
-            <element signature="e#1282#1283#0" expanded="true" />
+            <element signature="e#1053#1282#0" expanded="true" />
+            <element signature="e#1281#1282#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -825,8 +830,8 @@
             <element signature="e#687#688#0" expanded="true" />
             <element signature="e#756#986#0" expanded="true" />
             <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1053#1283#0" expanded="true" />
-            <element signature="e#1282#1283#0" expanded="true" />
+            <element signature="e#1053#1282#0" expanded="true" />
+            <element signature="e#1281#1282#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -885,34 +890,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-          <folding>
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="method#textToHash#0;class#Info#0" expanded="false" />
-            <element signature="method#getHexadecimalValue#0;class#Info#0" expanded="false" />
-            <element signature="method#hexStringToByteArray#0;class#Info#0" expanded="false" />
-            <element signature="method#textAsymmetricKeyEncrypt#0;class#Info#0" expanded="false" />
-            <element signature="method#textAsymmetricKeyDecrypt#0;class#Info#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5156082">
-          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#472#688#0" expanded="true" />
             <element signature="e#687#688#0" expanded="true" />
             <element signature="e#756#986#0" expanded="true" />
             <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1053#1283#0" expanded="true" />
-            <element signature="e#1282#1283#0" expanded="true" />
+            <element signature="e#1053#1282#0" expanded="true" />
+            <element signature="e#1281#1282#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55435956">
+          <caret line="96" column="65" selection-start-line="96" selection-start-column="65" selection-end-line="96" selection-end-column="65" />
+          <folding>
+            <element signature="method#eraseDate#0;class#Info#0" expanded="false" />
+            <element signature="method#setTextField#0;class#Info#0" expanded="false" />
+            <element signature="method#textToHash#0;class#Info#0" expanded="false" />
+            <element signature="method#getHexadecimalValue#0;class#Info#0" expanded="false" />
+            <element signature="method#hexStringToByteArray#0;class#Info#0" expanded="false" />
+            <element signature="method#textAsymmetricKeyEncrypt#0;class#Info#0" expanded="false" />
+            <element signature="method#textSymmetricKeyEncrypt#0;class#Info#0" expanded="false" />
           </folding>
         </state>
       </provider>

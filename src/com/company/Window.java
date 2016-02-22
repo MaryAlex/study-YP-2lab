@@ -37,7 +37,7 @@ public class Window extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 info.setTextField(textField.getText());
-                info.textAsymmetricKeyEncrypt();
+                info.textSymmetricKeyEncrypt();
             }
         };
     }
