@@ -10,12 +10,30 @@ import java.security.*;
 public class Info {
     public static final String HASH_ALGORITHM = "SHA-256";
     public static final String ASYMMETRIC_ALGORITHM = "RSA";
-    public String textField;
+    private String textField;
     public String hashText;
     public String encryptedByAsymmetric;
     PrivateKey privateKey;
     PublicKey publicKey;
 
+    public String getTextField() {
+        return textField;
+    }
+
+    private void eraseDate() {
+        this.textField = null;
+        this.hashText = null;
+        this.encryptedByAsymmetric = null;
+        this.privateKey = null;
+        this.publicKey = null;
+    }
+
+    public void setTextField(String textField) {
+        if (this.textField != null && !this.textField.equals(textField)) {
+            eraseDate();
+        }
+        this.textField = textField;
+    }
 
     public void textToHash() {
         try {

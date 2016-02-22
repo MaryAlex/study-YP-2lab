@@ -8,7 +8,7 @@ public class Window extends JFrame {
     private JTextField textField;
     private JButton hashText;
     private JButton asymmetricKeyButton;
-    private JButton button3;
+    private JButton symmetricKeyButton;
     private JButton button4;
     private JPanel panel;
     private JTextArea textArea1;
@@ -18,7 +18,7 @@ public class Window extends JFrame {
         return new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                info.textField = textField.getText();
+                info.setTextField(textField.getText());
                 info.textToHash();
             }
         };
@@ -27,7 +27,16 @@ public class Window extends JFrame {
         return new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                info.textField = textField.getText();
+                info.setTextField(textField.getText());
+                info.textAsymmetricKeyEncrypt();
+            }
+        };
+    }
+    private ActionListener symmetricKey() {
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                info.setTextField(textField.getText());
                 info.textAsymmetricKeyEncrypt();
             }
         };
@@ -41,6 +50,7 @@ public class Window extends JFrame {
 
         hashText.addActionListener(hashText());
         asymmetricKeyButton.addActionListener(asymmetricKey());
+        symmetricKeyButton.addActionListener(symmetricKey());
 
         setVisible(true);
     }
