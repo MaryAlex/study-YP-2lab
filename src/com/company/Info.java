@@ -10,6 +10,7 @@ public class Info implements Serializable {
     public static String HASH_ALGORITHM = "SHA-256";
     public static String ASYMMETRIC_ALGORITHM = "RSA";
     public static String SYMMETRIC_ALGORITHM = "DES";
+    public String method = "";
     private String textField;
     public String hashText;
     public String encryptedByAsymmetric;

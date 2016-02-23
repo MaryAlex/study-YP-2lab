@@ -19,12 +19,12 @@ public class SaveWindow extends JDialog {
     public JButton okButton;
     private String path;
 
-    public SaveWindow() {
+    public SaveWindow(Boolean visible) {
         super();
         setContentPane(panel);
         pack();
         setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-        setModal(true);
+        setModal(visible);
         okButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -32,6 +32,6 @@ public class SaveWindow extends JDialog {
             }
         });
 
-        setVisible(true);
+        setVisible(visible);
     }
 }

@@ -69,6 +69,12 @@ public class Window extends JFrame {
                 info.setHashAlgorithm(hashComboBox.getSelectedItem().toString());
                 info.textToHash();
                 print();
+                SaveWindow saveWindow = new SaveWindow(false);
+                saveWindow.hashTextCheckBox.setSelected(true);
+                saveWindow.hashAlgorithmCheckBox.setSelected(true);
+                info.method = "Hash";
+                InfoSaver.saveObject("/home/mary/Work/Java/YP/2lab/src/file." + FILE_END, info, saveWindow);
+                info.method = "";
             }
         };
     }
@@ -80,6 +86,13 @@ public class Window extends JFrame {
                 info.setAsymmetricAlgorithm(asymmetricComboBox.getSelectedItem().toString());
                 info.textAsymmetricKeyEncrypt();
                 print();
+                SaveWindow saveWindow = new SaveWindow(false);
+                saveWindow.encryptedByAsymmetricCheckBox.setSelected(true);
+                saveWindow.asymmetricAlgorithmCheckBox.setSelected(true);
+                saveWindow.publicAsymmetricKeyCheckBox.setSelected(true);
+                info.method = "Symmetric key";
+                InfoSaver.saveObject("/home/mary/Work/Java/YP/2lab/src." + FILE_END, info, saveWindow);
+                info.method = "";
             }
         };
     }
@@ -91,15 +104,22 @@ public class Window extends JFrame {
                 info.setSymmetricAlgorithm(symmetricComboBox.getSelectedItem().toString());
                 info.textSymmetricKeyEncrypt();
                 print();
+                SaveWindow saveWindow = new SaveWindow(false);
+                saveWindow.encryptedBySymmetricCheckBox.setSelected(true);
+                saveWindow.symmetricAlgorithmCheckBox.setSelected(true);
+                saveWindow.publicSymmetricKeyCheckBox.setSelected(true);
+                info.method = "Symmetric key";
+                InfoSaver.saveObject("/home/mary/Work/Java/YP/2lab/src." + FILE_END, info, saveWindow);
+                info.method = "";
             }
         };
     }
-    //TODO choose field to save
+
     private ActionListener saveInfo() {
         return new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                SaveWindow saveWindow = new SaveWindow();
+                SaveWindow saveWindow = new SaveWindow(true);
                 String path = saveL();
                 if (path != null) {
                     InfoSaver.saveObject(path, info, saveWindow);
