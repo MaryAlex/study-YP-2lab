@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class SaveWindow extends JFrame {
+public class SaveWindow extends JDialog {
     public JCheckBox normalTextCheckBox;
     public JCheckBox privateAsymmetricKeyCheckBox;
     public JCheckBox encryptedBySymmetricCheckBox;
@@ -20,11 +20,11 @@ public class SaveWindow extends JFrame {
     private String path;
 
     public SaveWindow() {
-        super("Hello");
+        super();
         setContentPane(panel);
         pack();
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+        setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        setModal(true);
         okButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

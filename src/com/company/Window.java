@@ -13,10 +13,17 @@ public class Window extends JFrame {
     private JButton symmetricKeyButton;
     private JButton serializationButton;
     private JPanel panel;
-    private JTextArea textArea1;
+    private JTextArea out;
+    private JComboBox hashComboBox;
+    private JComboBox asymmetricComboBox;
+    private JComboBox symmetricComboBox;
+    private JButton loadButton;
     Info info = new Info();
 
-
+    public void print() {
+        out.setText("");
+        info.printInTextArea(out);
+    }
 
     public String saveL() {
         String path = null;
@@ -37,12 +44,31 @@ public class Window extends JFrame {
         return path;
     }
 
+    public String openL() {
+        String path = null;
+        JFileChooser c = new JFileChooser();
+        FileNameExtensionFilter filter = new FileNameExtensionFilter(FILE_END, FILE_END);
+        c.setFileFilter(filter);
+       // c.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+        int rVal = c.showOpenDialog(Window.this);
+        if (rVal == JFileChooser.APPROVE_OPTION) {
+            path = c.getSelectedFile().toString();
+        }
+        if (rVal == JFileChooser.CANCEL_OPTION) {
+            /* no-op */
+        }
+        return path;
+    }
+
+
     private ActionListener hashText() {
         return new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 info.setTextField(textField.getText());
+                info.setHashAlgorithm(hashComboBox.getSelectedItem().toString());
                 info.textToHash();
+                print();
             }
         };
     }
@@ -51,7 +77,9 @@ public class Window extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 info.setTextField(textField.getText());
+                info.setAsymmetricAlgorithm(asymmetricComboBox.getSelectedItem().toString());
                 info.textAsymmetricKeyEncrypt();
+                print();
             }
         };
     }
@@ -60,21 +88,35 @@ public class Window extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 info.setTextField(textField.getText());
+                info.setSymmetricAlgorithm(symmetricComboBox.getSelectedItem().toString());
                 info.textSymmetricKeyEncrypt();
+                print();
             }
         };
     }
-    //TODO choose field to save and beautiful save
+    //TODO choose field to save
     private ActionListener saveInfo() {
         return new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 SaveWindow saveWindow = new SaveWindow();
                 String path = saveL();
-                System.out.println(saveWindow.hashTextCheckBox.isSelected());
                 if (path != null) {
-                    InfoSaver.saveObject(path, info);
+                    InfoSaver.saveObject(path, info, saveWindow);
                 }
+            }
+        };
+    }
+
+    private ActionListener loadInfo() {
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String path = openL();
+                if (path != null) {
+                    info = InfoSaver.loadObject(path);
+                }
+                print();
             }
         };
     }
@@ -89,6 +131,7 @@ public class Window extends JFrame {
         asymmetricKeyButton.addActionListener(asymmetricKey());
         symmetricKeyButton.addActionListener(symmetricKey());
         serializationButton.addActionListener(saveInfo());
+        loadButton.addActionListener(loadInfo());
 
         setVisible(true);
     }

@@ -1,12 +1,12 @@
 package com.company;
 
 import javax.crypto.*;
+import javax.swing.*;
 import java.io.Serializable;
 import java.security.*;
 
 
 public class Info implements Serializable {
-    //TODO 2 algorithms at choice instead 1 on each function
     public static String HASH_ALGORITHM = "SHA-256";
     public static String ASYMMETRIC_ALGORITHM = "RSA";
     public static String SYMMETRIC_ALGORITHM = "DES";
@@ -22,12 +22,25 @@ public class Info implements Serializable {
         return textField;
     }
 
+    public void printInTextArea(JTextArea out) {
+        out.append("Input text: " + textField + "\n");
+        out.append("Hash algorithm: " + HASH_ALGORITHM + "\n");
+        out.append("Hash text: " + hashText + "\n");
+        out.append("Asymmetric algorithm: " + ASYMMETRIC_ALGORITHM + "\n");
+        out.append("Asymmetric text: " + encryptedByAsymmetric + "\n");
+        out.append("Symmetric algorithm: " + SYMMETRIC_ALGORITHM + "\n");
+        out.append("Symmetric text: " + encryptedBySymmetric + "\n");
+    }
+
     private void eraseDate() {
         this.textField = null;
         this.hashText = null;
         this.encryptedByAsymmetric = null;
         this.privateAsymmetricKey = null;
         this.publicAsymmetricKey = null;
+        this.encryptedBySymmetric = null;
+        this.publicSymmetricKey = null;
+
     }
 
     public void setTextField(String textField) {
@@ -35,6 +48,18 @@ public class Info implements Serializable {
             eraseDate();
         }
         this.textField = textField;
+    }
+
+    public static void setHashAlgorithm(String hashAlgorithm) {
+        HASH_ALGORITHM = hashAlgorithm;
+    }
+
+    public static void setAsymmetricAlgorithm(String asymmetricAlgorithm) {
+        ASYMMETRIC_ALGORITHM = asymmetricAlgorithm;
+    }
+
+    public static void setSymmetricAlgorithm(String symmetricAlgorithm) {
+        SYMMETRIC_ALGORITHM = symmetricAlgorithm;
     }
 
     public void textToHash() {
