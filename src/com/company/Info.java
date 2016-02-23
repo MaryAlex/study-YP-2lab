@@ -7,9 +7,9 @@ import java.security.*;
 
 
 public class Info implements Serializable {
-    public static String HASH_ALGORITHM = "SHA-256";
-    public static String ASYMMETRIC_ALGORITHM = "RSA";
-    public static String SYMMETRIC_ALGORITHM = "DES";
+    public String HASH_ALGORITHM = "SHA-256";
+    public String ASYMMETRIC_ALGORITHM = "RSA";
+    public String SYMMETRIC_ALGORITHM = "DES";
     public String method = "";
     private String textField;
     public String hashText;
@@ -18,6 +18,20 @@ public class Info implements Serializable {
     PrivateKey privateAsymmetricKey;
     PublicKey publicAsymmetricKey;
     Key publicSymmetricKey;
+
+    public Info() {
+    }
+
+    public Info(Info obj) {
+        this.method = obj.method;
+        this.textField = obj.textField;
+        this.hashText = obj.hashText;
+        this.encryptedByAsymmetric = obj.encryptedByAsymmetric;
+        this.encryptedBySymmetric = obj.encryptedBySymmetric;
+        this.privateAsymmetricKey = obj.privateAsymmetricKey;
+        this.publicAsymmetricKey = obj.publicAsymmetricKey;
+        this.publicSymmetricKey = obj.publicSymmetricKey;
+    }
 
     public String getTextField() {
         return textField;
@@ -51,15 +65,15 @@ public class Info implements Serializable {
         this.textField = textField;
     }
 
-    public static void setHashAlgorithm(String hashAlgorithm) {
+    public void setHashAlgorithm(String hashAlgorithm) {
         HASH_ALGORITHM = hashAlgorithm;
     }
 
-    public static void setAsymmetricAlgorithm(String asymmetricAlgorithm) {
+    public void setAsymmetricAlgorithm(String asymmetricAlgorithm) {
         ASYMMETRIC_ALGORITHM = asymmetricAlgorithm;
     }
 
-    public static void setSymmetricAlgorithm(String symmetricAlgorithm) {
+    public void setSymmetricAlgorithm(String symmetricAlgorithm) {
         SYMMETRIC_ALGORITHM = symmetricAlgorithm;
     }
 

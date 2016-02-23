@@ -4,6 +4,7 @@ import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 
 public class Window extends JFrame {
     public static final String FILE_END = "encinf";
@@ -152,7 +153,32 @@ public class Window extends JFrame {
         symmetricKeyButton.addActionListener(symmetricKey());
         serializationButton.addActionListener(saveInfo());
         loadButton.addActionListener(loadInfo());
+        JMenuBar menuBar = new JMenuBar();
 
+        // File Menu, F - Mnemonic
+        JMenu fileMenu = new JMenu("Menu");
+        fileMenu.setMnemonic(KeyEvent.VK_F);
+        menuBar.add(fileMenu);
+
+        // File->New, N - Mnemonic
+        JMenuItem newMenuItem = new JMenuItem("Hash", KeyEvent.VK_N);
+        newMenuItem.addActionListener(hashText());
+        fileMenu.add(newMenuItem);
+        JMenuItem newMenuItem3 = new JMenuItem("Asymmetric", KeyEvent.VK_N);
+        newMenuItem3.addActionListener(asymmetricKey());
+        fileMenu.add(newMenuItem3);
+        JMenuItem newMenuItem4 = new JMenuItem("Symmetric", KeyEvent.VK_N);
+        newMenuItem4.addActionListener(symmetricKey());
+        fileMenu.add(newMenuItem4);
+        JMenuItem newMenuItem6 = new JMenuItem("Save", KeyEvent.VK_N);
+        newMenuItem6.addActionListener(saveInfo());
+        fileMenu.add(newMenuItem6);
+        JMenuItem newMenuItem7 = new JMenuItem("Load", KeyEvent.VK_N);
+        newMenuItem7.addActionListener(loadInfo());
+        fileMenu.add(newMenuItem7);
+
+
+        setJMenuBar(menuBar);
         setVisible(true);
     }
 }

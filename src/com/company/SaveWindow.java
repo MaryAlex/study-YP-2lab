@@ -28,7 +28,7 @@ public class SaveWindow extends JDialog {
         okButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                dispose();
+                setVisible(false);
             }
         });
 

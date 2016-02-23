@@ -90,7 +90,6 @@
         </constraints>
         <properties>
           <model>
-            <item value="DES"/>
             <item value="DESede"/>
             <item value="RC4"/>
           </model>
