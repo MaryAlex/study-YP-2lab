@@ -1,17 +1,22 @@
 package com.company;
 
 import javax.crypto.*;
+import java.io.Serializable;
 import java.security.*;
 
 
-public class Info {
-    public static final String HASH_ALGORITHM = "SHA-256";
-    public static final String ASYMMETRIC_ALGORITHM = "RSA";
+public class Info implements Serializable {
+    //TODO 2 algorithms at choice instead 1 on each function
+    public static String HASH_ALGORITHM = "SHA-256";
+    public static String ASYMMETRIC_ALGORITHM = "RSA";
+    public static String SYMMETRIC_ALGORITHM = "DES";
     private String textField;
     public String hashText;
     public String encryptedByAsymmetric;
+    public String encryptedBySymmetric;
     PrivateKey privateAsymmetricKey;
     PublicKey publicAsymmetricKey;
+    Key publicSymmetricKey;
 
     public String getTextField() {
         return textField;
@@ -90,12 +95,24 @@ public class Info {
         }
     }
 
-    public void textAsymmetricKeyDecrypt() {
-        try {
+    public String textAsymmetricKeyDecrypt() throws Exception{
             Cipher dipher = Cipher.getInstance(ASYMMETRIC_ALGORITHM);
 
             dipher.init(Cipher.DECRYPT_MODE, privateAsymmetricKey);
-            System.out.println(new String(dipher.doFinal(hexStringToByteArray(encryptedByAsymmetric))));
+            return new String(dipher.doFinal(hexStringToByteArray(encryptedByAsymmetric)));
+    }
+
+    public void textSymmetricKeyEncrypt() {
+        try {
+            publicSymmetricKey = KeyGenerator.getInstance(SYMMETRIC_ALGORITHM).generateKey();
+            Cipher cipher = Cipher.getInstance(SYMMETRIC_ALGORITHM);
+            byte[] encryptionBytes = null;
+            System.out.println("Entered: " + textField);
+            cipher.init(Cipher.ENCRYPT_MODE, publicSymmetricKey);
+            byte[] inputBytes = textField.getBytes();
+            encryptionBytes = cipher.doFinal(inputBytes);
+            encryptedBySymmetric = getHexadecimalValue(encryptionBytes);
+            System.out.println(encryptedBySymmetric);
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         } catch (NoSuchPaddingException e) {
@@ -109,8 +126,11 @@ public class Info {
         }
     }
 
-    public void textSymmetricKeyEncrypt() {
-        key = KeyGenerator.getInstance(algorithm).generateKey();
-        cipher = Cipher.getInstance(algorithm);
+    public String textSymmetricKeyDecrypt() throws Exception{
+            Cipher cipher = Cipher.getInstance(SYMMETRIC_ALGORITHM);
+            cipher.init(Cipher.DECRYPT_MODE, publicSymmetricKey);
+            byte[] recoveredBytes = cipher.doFinal(hexStringToByteArray(encryptedBySymmetric));
+            String recovered = new String(recoveredBytes);
+            return  recovered;
     }
 }

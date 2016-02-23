@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a30291b-b7af-4db1-9989-53db8c994a50" name="Default" comment="">
+    <list default="true" id="6a30291b-b7af-4db1-9989-53db8c994a50" name="Default" comment="Serializable in process">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/InfoSaver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/SaveWindow.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/SaveWindow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Info.java" afterPath="$PROJECT_DIR$/src/com/company/Info.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Window.form" afterPath="$PROJECT_DIR$/src/com/company/Window.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Window.java" afterPath="$PROJECT_DIR$/src/com/company/Window.java" />
     </list>
     <ignored path="YP 2lab.iws" />
@@ -40,34 +44,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Window.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Window.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.634584">
+              <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#472#688#0" expanded="true" />
-                <element signature="e#687#688#0" expanded="true" />
-                <element signature="e#756#986#0" expanded="true" />
-                <element signature="e#985#986#0" expanded="true" />
-                <element signature="e#1053#1282#0" expanded="true" />
-                <element signature="e#1281#1282#0" expanded="true" />
+                <element signature="e#1256#1472#0" expanded="true" />
+                <element signature="e#1471#1472#0" expanded="true" />
+                <element signature="e#1540#1770#0" expanded="true" />
+                <element signature="e#1769#1770#0" expanded="true" />
+                <element signature="e#1837#2066#0" expanded="true" />
+                <element signature="e#2065#2066#0" expanded="true" />
+                <element signature="e#2180#2588#0" expanded="true" />
+                <element signature="e#2587#2588#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Window.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Osi/1lab/src/com/company/Window.java">
+      <file leaf-file-name="SaveWindow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/SaveWindow.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+              <caret line="19" column="24" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="24" />
               <folding>
-                <element signature="e#1893#2101#0" expanded="true" />
-                <element signature="e#2100#2101#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#904#1056#0" expanded="true" />
+                <element signature="e#1055#1056#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SaveWindow.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/SaveWindow.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -78,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Info.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Info.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Info.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55435956">
-              <caret line="96" column="65" selection-start-line="96" selection-start-column="65" selection-end-line="96" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
               <folding>
                 <element signature="method#eraseDate#0;class#Info#0" expanded="false" />
                 <element signature="method#setTextField#0;class#Info#0" expanded="false" />
@@ -90,7 +104,18 @@
                 <element signature="method#getHexadecimalValue#0;class#Info#0" expanded="false" />
                 <element signature="method#hexStringToByteArray#0;class#Info#0" expanded="false" />
                 <element signature="method#textAsymmetricKeyEncrypt#0;class#Info#0" expanded="false" />
-                <element signature="method#textSymmetricKeyEncrypt#0;class#Info#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InfoSaver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/InfoSaver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,8 +143,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/Window.form" />
-        <option value="$PROJECT_DIR$/src/com/company/Window.java" />
         <option value="$PROJECT_DIR$/src/com/company/Info.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Saver.java" />
+        <option value="$PROJECT_DIR$/src/com/company/SaveWindow.form" />
+        <option value="$PROJECT_DIR$/src/com/company/InfoSaver.java" />
+        <option value="$PROJECT_DIR$/src/com/company/SaveWindow.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Window.java" />
       </list>
     </option>
   </component>
@@ -190,12 +219,48 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2lab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2lab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="company" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Window" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2lab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2lab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SaveWindow" />
               <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -232,6 +297,7 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="true" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
@@ -685,7 +751,7 @@
       <updated>1455900117186</updated>
       <workItem from="1455900119690" duration="1973000" />
       <workItem from="1455904735632" duration="17000" />
-      <workItem from="1456168631867" duration="11402000" />
+      <workItem from="1456168631867" duration="18158000" />
     </task>
     <task id="LOCAL-00001" summary="hex ready">
       <created>1456171466251</created>
@@ -711,18 +777,33 @@
       <option name="project" value="LOCAL" />
       <updated>1456183102955</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Check(Doesn't work)">
+      <created>1456183506292</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1456183506292</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13392000" />
+    <option name="totallyTimeSpent" value="20148000" />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -733,6 +814,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1652847" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -744,7 +826,6 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -761,7 +842,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hex ready" />
     <MESSAGE value="asymmetricKey ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="asymmetricKey ready" />
+    <MESSAGE value="Check(Doesn't work)" />
+    <MESSAGE value="Serializable in process" />
+    <option name="LAST_COMMIT_MESSAGE" value="Serializable in process" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -791,12 +874,14 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#472#688#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#756#986#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1053#1282#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
+            <element signature="e#1256#1472#0" expanded="true" />
+            <element signature="e#1471#1472#0" expanded="true" />
+            <element signature="e#1540#1770#0" expanded="true" />
+            <element signature="e#1769#1770#0" expanded="true" />
+            <element signature="e#1837#2066#0" expanded="true" />
+            <element signature="e#2065#2066#0" expanded="true" />
+            <element signature="e#2180#2588#0" expanded="true" />
+            <element signature="e#2587#2588#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -826,12 +911,14 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#472#688#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#756#986#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1053#1282#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
+            <element signature="e#1256#1472#0" expanded="true" />
+            <element signature="e#1471#1472#0" expanded="true" />
+            <element signature="e#1540#1770#0" expanded="true" />
+            <element signature="e#1769#1770#0" expanded="true" />
+            <element signature="e#1837#2066#0" expanded="true" />
+            <element signature="e#2065#2066#0" expanded="true" />
+            <element signature="e#2180#2588#0" expanded="true" />
+            <element signature="e#2587#2588#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -849,14 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/jre/lib/jce.jar!/javax/crypto/Cipher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6363636">
-          <caret line="200" column="41" selection-start-line="200" selection-start-column="41" selection-end-line="200" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -868,14 +947,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/security/Key.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3326157">
+          <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/jre/lib/jce.jar!/javax/crypto/Cipher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5946502">
+          <caret line="644" column="45" selection-start-line="644" selection-start-column="45" selection-end-line="644" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../Osi/1lab/src/com/company/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
-          <folding>
-            <element signature="e#1893#2101#0" expanded="true" />
-            <element signature="e#2100#2101#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.42857143">
+          <caret line="138" column="44" selection-start-line="138" selection-start-column="44" selection-end-line="138" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -890,26 +982,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#472#688#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#756#986#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1053#1282#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Info.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55435956">
-          <caret line="96" column="65" selection-start-line="96" selection-start-column="65" selection-end-line="96" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
           <folding>
             <element signature="method#eraseDate#0;class#Info#0" expanded="false" />
             <element signature="method#setTextField#0;class#Info#0" expanded="false" />
@@ -917,7 +993,59 @@
             <element signature="method#getHexadecimalValue#0;class#Info#0" expanded="false" />
             <element signature="method#hexStringToByteArray#0;class#Info#0" expanded="false" />
             <element signature="method#textAsymmetricKeyEncrypt#0;class#Info#0" expanded="false" />
-            <element signature="method#textSymmetricKeyEncrypt#0;class#Info#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/MyLab2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5567766">
+          <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/InfoSaver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/SaveWindow.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/SaveWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#904#1056#0" expanded="true" />
+            <element signature="e#1055#1056#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.634584">
+          <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1256#1472#0" expanded="true" />
+            <element signature="e#1471#1472#0" expanded="true" />
+            <element signature="e#1540#1770#0" expanded="true" />
+            <element signature="e#1769#1770#0" expanded="true" />
+            <element signature="e#1837#2066#0" expanded="true" />
+            <element signature="e#2065#2066#0" expanded="true" />
+            <element signature="e#2180#2588#0" expanded="true" />
+            <element signature="e#2587#2588#0" expanded="true" />
           </folding>
         </state>
       </provider>
